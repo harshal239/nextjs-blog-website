@@ -1,13 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Post({ post }) {
   return (
     <div className="p-4 shadow rounded-xl flex flex-col justify-between gap-2">
-      <Image
+      <img
         src={post.frontMatter.cover_image}
         alt="post-img"
         className="shadow"
+        layout="fill"
       />
       <div className=" my-2 p-1 rounded-sm bg-gray-100">
         Posted on {post.frontMatter.date}
