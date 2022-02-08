@@ -11,7 +11,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Dev Blog</title>
       </Head>
-      <div className="mt-8 max-w-5xl w-11/12 mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="my-8 max-w-5xl w-11/12 mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
         {posts.map((post, index) => {
           return <Post post={post} key={index} />;
         })}

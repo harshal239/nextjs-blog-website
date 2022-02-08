@@ -19,8 +19,12 @@ export default function PostPage({
       <div className="max-w-7xl w-11/12 mx-auto my-10 shadow-md p-4 rounded-lg">
         <h1 className="text-xl font-semibold">{title}</h1>
         <div className="my-2 p-1 rounded-sm bg-gray-100">Posted on {date}</div>
-        <img src={cover_image} alt="markdown" className="shadow" />
-        <div className="post-body text-base">
+        <img
+          src={cover_image}
+          alt="markdown"
+          className="shadow max-w-full h-auto object-cover rounded-md"
+        />
+        <div className="post-body text-base mt-4">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>

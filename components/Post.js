@@ -6,8 +6,7 @@ export default function Post({ post }) {
       <img
         src={post.frontMatter.cover_image}
         alt="post-img"
-        className="shadow"
-        layout="fill"
+        className="shadow max-w-full h-auto object-cover rounded-md"
       />
       <div className=" my-2 p-1 rounded-sm bg-gray-100">
         Posted on {post.frontMatter.date}
